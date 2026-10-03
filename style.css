@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    background: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #263247;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #60a5fa;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/*Profile Pic*/
+
+#home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+
+/* Home */
+
+#home {
+    min-height: 90vh;
+    padding: 140px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #0b0f19, #111c35);
+}
+
+#home h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#home h3 {
+    font-size: 24px;
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 650px;
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    background: #2563eb;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#home a:hover {
+    background: #60a5fa;
+    color: #08111f;
+}
+
+/* Common Section */
+
+section {
+    padding: 90px 10%;
+    min-height: 60vh;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #60a5fa;
+}
+
+section p {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+/* About */
+
+#about {
+    background: #0f172a;
+}
+
+#about p b {
+    color: white;
+}
+
+/* Education */
+
+#education {
+    background: #111827;
+}
+
+#education h3 {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+/* Skills */
+
+#skills {
+    background: #0f172a;
+}
+
+#skills p {
+    background: #172033;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border-left: 4px solid #60a5fa;
+    max-width: 500px;
+}
+
+/* Hobbies */
+
+#hobbies {
+    background: #111827;
+}
+
+#hobbies p {
+    background: #172033;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+/* Goals */
+
+#goals {
+    background: #0f172a;
+}
+
+/* Contact */
+
+#contact {
+    background: #111827;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #60a5fa;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #080c14;
+    color: #94a3b8;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h3 {
+        font-size: 19px;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+}
